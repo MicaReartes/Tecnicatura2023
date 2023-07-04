@@ -21,7 +21,7 @@ public class Ejercicio7 {
         salarioMensual = salario + comision + porcVenta;
 
         System.out.println("\nEl salario mensual es: " + salarioMensual);
-
+        
     }
-
+    
 }
