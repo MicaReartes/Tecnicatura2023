@@ -165,7 +165,7 @@ public class EjercicioJava2 {
         if (num1 % 2 == 0) //solo una linea de lectura, no hace falta poner llaves {}
          System.out.println("es un num par");
         else
-         System.out.println("es numero impar");*/
+         System.out.println("es numero impar");
         
         int varNum1 = 1, varNum2 = 4;
         int varNum3 = varNum1 + 6 - varNum2;
@@ -181,10 +181,90 @@ public class EjercicioJava2 {
          varNum1 /= 5; //varNum1 = varNum1 / 1
         System.out.println("varNum1 = " + varNum1);
         
-       
-
+        //operadores unarios - cambio de signo
+        var varA = 7;
+        var varB = -varA;
+        System.out.println("varA = " + varA);
+        System.out.println("varB = " + varB);
         
+        //operadores de negacion
+        var varC = true;
+        var varD = !varC;
+        System.out.println("varC = " + varC);
+        System.out.println("varD = " + varD);
+        
+        //operadores de incremento
+        //PREINCREMENTO
+        var varE = 9; //se va a modificar su valor
+        var varF = ++varE;
+        //primero se incrementa la variable y despues se usa su valor
+        System.out.println("varE = " + varE);//se incrementa en la unidad
+        System.out.println("varF = " + varF);//va a sumar uno
+       
+        //POSINCREMENTO
+        var varG = 3;
+        var varH = varG++; //primero el valor de la variable, luego el incremento
+        System.out.println("varG = " + varG);
+        System.out.println("varH = " + varH);
+        //el incremento solo afecta a la variable G.
+        
+        //operadores unarios de decremento
+        //PREDECREMENTO
+        var varI = 4;
+        var varJ = --varI;
+        System.out.println("varI = " + varI);
+        System.out.println("varJ = " + varJ);
+        
+        //POSDECREMENTO
+        var varK = 8;
+        var varL = varK--;
+        System.out.println("varK = " + varK);
+        System.out.println("varL = " + varL);
+
+        //operadores de igualdad y relacionales
+        var aNum = 5;
+        var bNum = 3;
+        var cNum = (aNum == bNum); //nos devuelve true o false "== igual a"
+        System.out.println("cNum = " + cNum);
+
+        var dNum = aNum != bNum; //opcional poner parentesis
+        System.out.println("dNum = " + dNum);
+
+        var cadenaA = "hello";
+        var cadenaB = "bye bye";
+        var cVar = cadenaA == cadenaB; //comparacion de referencia
+        System.out.println("cVar = " + cVar);
+
+        var fVar = cadenaA.equals(cadenaB); //comparacion del conteido de las variables
+        System.out.println("fVar = " + fVar);
+
+        //operadores relacionales
+        var gVar = aNum < bNum; //probar con todos los operadores >, <, =, =>, =<, ==, !=
+        System.out.println("gVar = " + gVar);
+
+        if (aNum % 2 == 0) {
+            System.out.println("el num es par");
+        } else {
+            System.out.println("el num es impar");
+        }
+
+        var edad = 30;
+        var adulto = 18;
+        if (edad >= adulto) {
+            System.out.println("es mayor");
+        } else {
+            System.out.println("es menor");
+        }
+    }*/
+        //operadores condicionales 
+        var valorA = 7;
+        var valorMinimo = 0;
+        var valorMaximo = 10;
+        var respuesta = valorA >= 0 && valorA <= 10;
+        if (respuesta) {
+            System.out.println("esta dentro del rango");
+        } else {
+            System.out.println("esta fuera del rango");
+        }
+        }
     }
-}
-
-
